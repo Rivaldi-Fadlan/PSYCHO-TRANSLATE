@@ -7,7 +7,7 @@ from config import dbi,fsi
 from text import extract_pdf
 from split import long
 
-paths = "/home/lann/NLP/lann.pdf"
+paths = "/path/to/file"
 
 word = extract_pdf(paths)
 token = sent_tokenize(" ".join(word)if isinstance(word,list)else word)
